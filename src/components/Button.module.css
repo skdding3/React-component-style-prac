@@ -7,3 +7,7 @@
   padding: 0.25em 1em;
   font-size: 20px;
 }
+
+.loading {
+  border: 2px solid gray;
+}
