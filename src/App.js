@@ -2,8 +2,9 @@ import logo from "./logo.svg";
 // import "./App.css";
 // import "./App.scss";
 import styles from "./App.module.css";
-
+import { Calendar } from "antd";
 import Button from "./components/Button";
+import { GithubOutlined } from "@ant-design/icons";
 
 // CSS Module style
 // {
@@ -23,6 +24,9 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <Button>버튼</Button>
+        <GithubOutlined />
+
+        <Calendar />
       </header>
     </div>
   );

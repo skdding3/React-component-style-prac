@@ -16,14 +16,14 @@ class Button extends React.Component {
       <button
         onClick={this.startLoading}
         className={
-        // classNames를 사용하지 않았을 때 코드
-        //   this.state.loading
-        //     ? `${styles["button"]} ${styles["loading"]}`
-        //     : styles["button"]
-        // classNames 사용시
-        classNames(styles["button"], 
-          {styles["loading"]: this.state.loading,
-        })}
+          // classNames를 사용하지 않았을 때 코드
+          this.state.loading
+            ? `${styles["button"]} ${styles["loading"]}`
+            : styles["button"]
+          // classNames 사용시
+          // classNames(styles["button"],
+          //   {styles["loading"]: this.state.loading,
+        }
         {...this.props}
       />
     );
